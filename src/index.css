@@ -1,0 +1,115 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem; /* Kenarlardan boşluk */
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+.lead {
+  font-weight: 600;
+}
+p {
+  font-weight: 500;
+}
+
+/* birçok yerde ortak olarak kullanılan yerleri içerir */
+:root {
+  --buton-color-1: #355592;
+  --background-color-1: #d6eaf8;
+}
+.blue-box {
+  background-color: #355592;
+  font-weight: 700;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.section-title h1 {
+  font-weight: 900;
+  font-size: 60px;
+}
+.btn-custom {
+  background-color: #355592;
+  color: white;
+  font-weight: 600;
+  margin-right: 15px;
+}
+.btn-custom2 {
+  background-color: transparent;
+  border: 1px solid white;
+  font-weight: 600;
+  color: white;
+  box-sizing: border-box; /*borderı butonun içinde tutmsı için */
+}
+/* çoğu yerde ortak olan üstte başlık altta turuncu çizgi ve altındaki lorem kısmı  */
+.small-box {
+  max-width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.small-box h1 {
+  color: var(--buton-color-1);
+  font-weight: 800;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.small-box span {
+  display: inline-block;
+  border-radius: 6px;
+  width: 70px;
+  height: 1px;
+  margin-bottom: 20px;
+  background-color: orange;
+}
+
+.logo-img {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+}
+.line {
+  background-color: #355592;
+  font-weight: 700;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* responsive tasarım  */
+@media (max-width: 991px) {
+  .small-box {
+    max-width: 100%;
+  }
+  .btn-custom {
+    margin-right: 0;
+  }
+}
